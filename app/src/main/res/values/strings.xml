@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BD_App</string>
+    <string name="textView">MENÚ</string>
+    <string name="btn_vender">VENDER</string>
+    <string name="btn_consultar">CONSULTAR</string>
+    <string name="btn_cambiar">CAMBIAR</string>
+    <string name="btn_cancelar">CANCELAR</string>
+</resources>
