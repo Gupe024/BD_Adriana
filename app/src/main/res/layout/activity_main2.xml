@@ -23,6 +23,7 @@
         android:layout_marginTop="30dp"/>
 
     <Button
+        android:id="@+id/vender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_vender"
@@ -30,6 +31,7 @@
         android:layout_gravity="center"/>
 
     <Button
+        android:id="@+id/consultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_consultar"
@@ -37,6 +39,7 @@
         android:layout_gravity="center"/>
 
     <Button
+        android:id="@+id/actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_cambiar"
@@ -44,9 +47,10 @@
         android:layout_gravity="center" />
 
     <Button
+        android:id="@+id/eliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_cancelar"
+        android:text="@string/btn_eliminar"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"/>
 

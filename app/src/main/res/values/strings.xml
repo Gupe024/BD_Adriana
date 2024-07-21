@@ -3,6 +3,32 @@
     <string name="textView">MENÚ</string>
     <string name="btn_vender">VENDER</string>
     <string name="btn_consultar">CONSULTAR</string>
-    <string name="btn_cambiar">CAMBIAR</string>
+    <string name="btn_cambiar">ACTUALIZAR</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+    <string name="text_id">ID</string>
+    <string name="btn_fecha">Seleccionar fecha</string>
+    <string name="btn_hora">Seleccionar hora</string>
+    <string name="text_total">Total $</string>
+    <string name="btn_guardar">GUARDAR</string>
     <string name="btn_cancelar">CANCELAR</string>
+    <string name="numero">0</string>
+
+    <string-array name="origenes_array">
+        <item>Seleccionar</item>
+        <item>Valladolid</item>
+        <item>Sisal</item>
+        <item>Izamal</item>
+        <item>Tulum</item>
+        <item>Tekax</item>
+    </string-array>
+
+    <string-array name="destinos_array">
+        <item>Seleccionar</item>
+        <item>Tekax</item>
+        <item>Tulum</item>
+        <item>Izamal</item>
+        <item>Sisal</item>
+        <item>Valladolid</item>
+    </string-array>
+
 </resources>
