@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Fecha seleccionada"
+            android:text="@string/text_fecha"
             android:textSize="20sp"/>
 
     </LinearLayout>
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Hora seleccionada"
+            android:text="@string/text_hora"
             android:textSize="20sp"/>
 
     </LinearLayout>

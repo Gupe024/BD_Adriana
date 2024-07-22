@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".consultar">
+    tools:context=".eliminar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_marginBottom="16dp">
 
         <EditText
-            android:id="@+id/edit_text_id_consultar"
+            android:id="@+id/editEliminar"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -29,22 +29,38 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="@string/btn_buscar"/>
+
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_view_resultado"
+        android:id="@+id/text_viewEliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_marginTop="16dp"
         android:gravity="center"/>
 
-    <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:layout_gravity="center"
-        android:text="@string/btn_regresar" />
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/btn_eliminar" />
+
+        <Button
+            android:id="@+id/btcancelar_Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_regresar"/>
+
+    </LinearLayout>
 
 </LinearLayout>

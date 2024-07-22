@@ -25,7 +25,7 @@
           android:layout_width="150dp"
           android:layout_height="48dp"
           android:layout_marginTop="30dp"
-          android:hint="Usuario"
+          android:hint="@string/text_usuario"
           android:inputType="text"
           android:textSize="20dp"
           android:textColor="@color/black" />
@@ -36,7 +36,7 @@
           android:layout_height="48dp"
           android:layout_marginTop="30dp"
           android:inputType="textPassword"
-          android:hint="Contraseña"
+          android:hint="@string/text_pass"
           android:textSize="20dp"
           android:textColor="@color/black" />
 
@@ -45,7 +45,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginTop="30dp"
-          android:text="INICIAR"
+          android:text="@string/btn_iniciar"
           android:backgroundTint="#8BC34A" />
 
    </LinearLayout>

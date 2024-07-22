@@ -12,8 +12,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "ventas.db";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String TABLE_VENTAS = "ventas";
-    private static final String COLUMN_ID = "id";
+    static final String TABLE_VENTAS = "ventas";
+    static final String COLUMN_ID = "id";
     private static final String COLUMN_ORIGEN = "origen";
     private static final String COLUMN_DESTINO = "destino";
     private static final String COLUMN_FECHA = "fecha";
@@ -79,4 +79,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return null;
         }
     }
+
+    public void actualizarVenta(Venta venta) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_ORIGEN, venta.getOrigen());
+        values.put(COLUMN_DESTINO, venta.getDestino());
+        values.put(COLUMN_FECHA, venta.getFecha());
+        values.put(COLUMN_HORA, venta.getHora());
+        values.put(COLUMN_TOTAL, venta.getTotal());
+
+        db.update(TABLE_VENTAS, values, COLUMN_ID + "=?", new String[]{String.valueOf(venta.getId())});
+        db.close();
+    }
+
 }

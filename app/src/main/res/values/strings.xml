@@ -1,17 +1,26 @@
 <resources>
     <string name="app_name">BD_App</string>
     <string name="textView">MENÚ</string>
+    <string name="btn_iniciar">INICIAR</string>
+    <string name="text_pass">Contraseña</string>
+    <string name="text_usuario">Usuario</string>
     <string name="btn_vender">VENDER</string>
     <string name="btn_consultar">CONSULTAR</string>
     <string name="btn_cambiar">ACTUALIZAR</string>
     <string name="btn_eliminar">ELIMINAR</string>
+    <string name="btn_buscar">BUSCAR</string>
     <string name="text_id">ID</string>
     <string name="btn_fecha">Seleccionar fecha</string>
     <string name="btn_hora">Seleccionar hora</string>
+    <string name="text_fecha">Fecha seleccionada</string>
+    <string name="text_hora">Hora seleccionada</string>
     <string name="text_total">Total $</string>
     <string name="btn_guardar">GUARDAR</string>
     <string name="btn_cancelar">CANCELAR</string>
     <string name="numero">0</string>
+    <string name="btnactual">ACTUALIZAR</string>
+    <string name="btn_regresar">REGRESAR</string>
+    <string name="text_ingresar">Ingrese ID</string>
 
     <string-array name="origenes_array">
         <item>Seleccionar</item>

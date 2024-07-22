@@ -6,7 +6,7 @@ public class Venta {
     private String destino;
     private String fecha;
     private String hora;
-    private int total;
+    private double total;
 
     public Venta(String origen, String destino, String fecha, String hora, int total) {
         this.origen = origen;
@@ -40,7 +40,26 @@ public class Venta {
         return hora;
     }
 
-    public int getTotal() {
+    public double getTotal() {
         return total;
+    }
+
+    public void setOrigen(String origen) {
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 }
