@@ -1,9 +1,48 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+
     <style name="Base.Theme.BD_App" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@drawable/background_fondo</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ButtonPrimary">
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:background">@color/semi_transparent_white</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextViewStyle2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="TextViewStyle3">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="TextViewStyle4">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="Theme.BD_App" parent="Base.Theme.BD_App" />
+
 </resources>

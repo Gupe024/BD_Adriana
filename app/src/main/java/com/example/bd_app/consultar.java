@@ -24,7 +24,7 @@ public class consultar extends AppCompatActivity {
 
         etIDBuscar = findViewById(R.id.edit_text_id_consultar);
         btnBuscar = findViewById(R.id.btn_buscar);
-        btnRegresar = findViewById(R.id.btn_regresar);  // Asegúrate de que este ID sea correcto en tu XML
+        btnRegresar = findViewById(R.id.btn_regresar);
         tvResultado = findViewById(R.id.text_view_resultado);
         dbHelper = new DatabaseHelper(this);
 

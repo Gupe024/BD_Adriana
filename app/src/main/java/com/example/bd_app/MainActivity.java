@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String user = usuarioEditText.getText().toString();
                 String pass = passwordEditText.getText().toString();
 
-                if (user.equals("Adriana") && pass.equals("adriana")) {
+                if (user.equals("Usuario") && pass.equals("usuario")) {
                     SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
 

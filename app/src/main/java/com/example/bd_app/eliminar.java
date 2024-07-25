@@ -52,7 +52,7 @@ public class eliminar extends AppCompatActivity {
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Regresar al menú o actividad anterior
+                finish();
             }
         });
     }

@@ -38,7 +38,7 @@ public class actualizar extends AppCompatActivity {
         setContentView(R.layout.activity_actualizar);
 
         dbHelper = new DatabaseHelper(this);
-        costos = new HashMap<>(); // Inicializa la variable
+        costos = new HashMap<>();
 
         editBuscarActual = findViewById(R.id.Editbuscar_actual);
         spinnerOrigen = findViewById(R.id.actual_origen);
@@ -63,7 +63,7 @@ public class actualizar extends AppCompatActivity {
         spinnerDestino.setAdapter(adapterDestino);
 
         cargarCostos();
-        configurarListenersSpinners(); // Configura los listeners de los spinners
+        configurarListenersSpinners();
 
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,25 +109,25 @@ public class actualizar extends AppCompatActivity {
         costos.put("Valladolid_Izamal", 200);
         costos.put("Valladolid_Sisal", 250);
 
-        costos.put("Tekax_Valladolid", 100);
-        costos.put("Tekax_Tulum", 120);
-        costos.put("Tekax_Izamal", 180);
-        costos.put("Tekax_Sisal", 230);
+        costos.put("Tekax_Valladolid", 300);
+        costos.put("Tekax_Tulum", 320);
+        costos.put("Tekax_Izamal", 380);
+        costos.put("Tekax_Sisal", 130);
 
-        costos.put("Tulum_Valladolid", 150);
-        costos.put("Tulum_Tekax", 120);
-        costos.put("Tulum_Izamal", 160);
+        costos.put("Tulum_Valladolid", 450);
+        costos.put("Tulum_Tekax", 420);
+        costos.put("Tulum_Izamal", 460);
         costos.put("Tulum_Sisal", 210);
 
-        costos.put("Izamal_Valladolid", 200);
-        costos.put("Izamal_Tekax", 180);
+        costos.put("Izamal_Valladolid", 170);
+        costos.put("Izamal_Tekax", 500);
         costos.put("Izamal_Tulum", 160);
         costos.put("Izamal_Sisal", 190);
 
-        costos.put("Sisal_Valladolid", 250);
+        costos.put("Sisal_Valladolid", 350);
         costos.put("Sisal_Tekax", 230);
         costos.put("Sisal_Tulum", 210);
-        costos.put("Sisal_Izamal", 190);
+        costos.put("Sisal_Izamal", 290);
     }
 
     private void configurarListenersSpinners() {
@@ -175,7 +175,6 @@ public class actualizar extends AppCompatActivity {
         int id = Integer.parseInt(idStr);
         venta = dbHelper.obtenerVentaPorID(id);
         if (venta != null) {
-            // Configurar los spinners con los valores obtenidos
             int origenPos = ((ArrayAdapter) spinnerOrigen.getAdapter()).getPosition(venta.getOrigen());
             spinnerOrigen.setSelection(origenPos);
 
@@ -250,6 +249,5 @@ public class actualizar extends AppCompatActivity {
         Toast.makeText(this, "Venta actualizada correctamente", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(actualizar.this, MainActivity2.class);
         startActivity(intent);
-        finish();
     }
 }

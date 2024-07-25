@@ -27,6 +27,7 @@ public class vender extends AppCompatActivity {
     Button btnHora;
     Button btnGuardar;
     Button btnCancelar;
+    Button btnRegresar;
     EditText ETTotal;
     TextView ETID;
     TextView TVFechaSeleccionada;
@@ -48,6 +49,7 @@ public class vender extends AppCompatActivity {
         btnHora = findViewById(R.id.btn_hora);
         btnGuardar = findViewById(R.id.btn_guardar);
         btnCancelar = findViewById(R.id.btn_cancelar);
+        btnRegresar = findViewById(R.id.botonregresar);
         ETTotal = findViewById(R.id.Ttotal);
         ETID = findViewById(R.id.edit_text_id);
         TVFechaSeleccionada = findViewById(R.id.tv_fecha_seleccionada);
@@ -66,25 +68,25 @@ public class vender extends AppCompatActivity {
         costos.put("Valladolid_Izamal", 200);
         costos.put("Valladolid_Sisal", 250);
 
-        costos.put("Tekax_Valladolid", 100);
-        costos.put("Tekax_Tulum", 120);
-        costos.put("Tekax_Izamal", 180);
-        costos.put("Tekax_Sisal", 230);
+        costos.put("Tekax_Valladolid", 300);
+        costos.put("Tekax_Tulum", 320);
+        costos.put("Tekax_Izamal", 380);
+        costos.put("Tekax_Sisal", 130);
 
-        costos.put("Tulum_Valladolid", 150);
-        costos.put("Tulum_Tekax", 120);
-        costos.put("Tulum_Izamal", 160);
+        costos.put("Tulum_Valladolid", 450);
+        costos.put("Tulum_Tekax", 420);
+        costos.put("Tulum_Izamal", 460);
         costos.put("Tulum_Sisal", 210);
 
-        costos.put("Izamal_Valladolid", 200);
-        costos.put("Izamal_Tekax", 180);
+        costos.put("Izamal_Valladolid", 170);
+        costos.put("Izamal_Tekax", 500);
         costos.put("Izamal_Tulum", 160);
         costos.put("Izamal_Sisal", 190);
 
-        costos.put("Sisal_Valladolid", 250);
+        costos.put("Sisal_Valladolid", 350);
         costos.put("Sisal_Tekax", 230);
         costos.put("Sisal_Tulum", 210);
-        costos.put("Sisal_Izamal", 190);
+        costos.put("Sisal_Izamal", 290);
     }
 
     private void configurarSpinner() {
@@ -118,7 +120,6 @@ public class vender extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // Do nothing here
             }
         });
     }
@@ -151,6 +152,13 @@ public class vender extends AppCompatActivity {
                 finish();
             }
         });
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void mostrarDatePickerDialog() {
@@ -161,7 +169,7 @@ public class vender extends AppCompatActivity {
 
         DatePickerDialog datePickerDialog = new DatePickerDialog(this,
                 (view, year1, month1, dayOfMonth) -> {
-                    month1++; // Los meses empiezan en 0
+                    month1++;
                     fechaSeleccionada = dayOfMonth + "/" + month1 + "/" + year1;
                     TVFechaSeleccionada.setText(fechaSeleccionada);
                 }, year, month, day);
@@ -209,6 +217,5 @@ public class vender extends AppCompatActivity {
 
         Toast.makeText(vender.this, "Guardado con éxito, ID: " + venta.getId(), Toast.LENGTH_SHORT).show();
 
-        finish();
     }
 }

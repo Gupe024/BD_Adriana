@@ -21,14 +21,16 @@
             android:layout_height="48dp"
             android:layout_weight="1"
             android:hint="@string/text_ingresar"
-            android:inputType="number"/>
+            android:inputType="number"
+            style="@style/EditTextStyle"/>
 
         <Button
             android:id="@+id/btn_buscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="@string/btn_buscar"/>
+            android:text="@string/btn_buscar"
+            style="@style/ButtonPrimary"/>
 
     </LinearLayout>
 
@@ -38,7 +40,8 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_marginTop="16dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        style="@style/EditTextStyle"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,13 +56,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:text="@string/btn_eliminar" />
+            android:text="@string/btn_eliminar"
+            style="@style/ButtonPrimary"/>
 
         <Button
             android:id="@+id/btcancelar_Regresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_regresar"/>
+            android:text="@string/btn_regresar"
+            style="@style/ButtonPrimary"/>
 
     </LinearLayout>
 

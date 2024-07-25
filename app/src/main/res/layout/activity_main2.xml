@@ -18,14 +18,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textView"
-        android:textSize="34sp"
+        style="@style/TextViewStyle2"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="60dp"/>
 
     <Button
         android:id="@+id/vender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
         android:text="@string/btn_vender"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"/>
@@ -34,6 +35,7 @@
         android:id="@+id/consultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
         android:text="@string/btn_consultar"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"/>
@@ -42,6 +44,7 @@
         android:id="@+id/actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
         android:text="@string/btn_cambiar"
         android:layout_marginTop="30dp"
         android:layout_gravity="center" />
@@ -50,6 +53,7 @@
         android:id="@+id/eliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
         android:text="@string/btn_eliminar"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"/>

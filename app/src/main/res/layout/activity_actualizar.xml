@@ -20,15 +20,18 @@
             android:layout_width="100dp"
             android:layout_height="48dp"
             android:layout_marginStart="90dp"
+            android:gravity="center"
             android:hint="@string/text_ingresar"
-            android:inputType="number"/>
+            android:inputType="number"
+            style="@style/EditTextStyle"/>
 
         <Button
             android:id="@+id/btnbuscar_actual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="@string/btn_buscar"/>
+            android:text="@string/btn_buscar"
+            style="@style/ButtonPrimary"/>
 
     </LinearLayout>
 
@@ -36,13 +39,15 @@
         android:id="@+id/actual_origen"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        style="@style/SpinnerStyle"/>
 
     <Spinner
         android:id="@+id/actual_destino"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        style="@style/SpinnerStyle"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +60,8 @@
             android:id="@+id/btnactual_fecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_fecha"/>
+            android:text="@string/btn_fecha"
+            style="@style/ButtonPrimary"/>
 
         <TextView
             android:id="@+id/Textctual_fecha"
@@ -63,7 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="@string/text_fecha"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            style="@style/EditTextStyle"/>
 
     </LinearLayout>
 
@@ -78,7 +85,8 @@
             android:id="@+id/btnactual_hora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_hora"/>
+            android:text="@string/btn_hora"
+            style="@style/ButtonPrimary"/>
 
         <TextView
             android:id="@+id/Textactual_hora"
@@ -86,7 +94,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="@string/text_hora"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            style="@style/EditTextStyle"/>
 
     </LinearLayout>
 
@@ -102,7 +111,8 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="200dp"
             android:text="@string/text_total"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/Textactual_Total"
@@ -114,7 +124,8 @@
             android:inputType="numberDecimal"
             android:text="@string/numero"
             android:textSize="25sp"
-            android:enabled="false" />
+            android:enabled="false"
+            style="@style/EditTextStyle"/>
 
     </LinearLayout>
 
@@ -131,14 +142,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:text="@string/btnactual" />
+            android:text="@string/btnactual"
+            style="@style/ButtonPrimary"/>
 
         <Button
             android:id="@+id/btnactual_cancelar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_cancelar"/>
-
+            android:text="@string/btn_cancelar"
+            style="@style/ButtonPrimary"/>
 
     </LinearLayout>
 
